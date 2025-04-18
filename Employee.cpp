@@ -4,6 +4,7 @@
 
 #include "Employee.h"
 
+
 Employee::Employee(int id, string name, double baseSalary)
         : id(id), name(name), baseSalary(baseSalary) {}
 
