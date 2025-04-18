@@ -27,8 +27,8 @@ void runTests(AuthManager& authManager, EmployeeSet& empSet) {
 
     // Test 2: Add employees and display
     if (authManager.isUserLoggedIn()) {
-        Manager* m1 = new Manager(1, "Alice", 5000, 1000);
-        Developer* d1 = new Developer(2, "Bob", 4000, 10);
+        auto* m1 = new Manager(1, "Alice", 5000, 1000);
+        auto* d1 = new Developer(2, "Bob", 4000, 10);
         empSet.insert(m1);
         empSet.insert(d1);
 
